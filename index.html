@@ -24,8 +24,8 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar bg-base-100 shadow-sm">
+    <header class="bg-blue-100 border-b border-blue-400">
+        <div class="w-11/12 mx-auto navbar">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -37,15 +37,24 @@
                     </div>
                     <ul tabindex="-1"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
                         <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
+                            <a href="http://" class="">
+                                <i class="fa-solid fa-circle-question"></i>
+                                FAQ
+                            </a>
                         </li>
-                        <li><a>Item 3</a></li>
+                        <li>
+                            <a href="http://" class="">
+                                <i class="fa-solid fa-book-open"></i>
+                                Learn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://" class="">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                Logout
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <a href="" class="flex items-center gap-1">
@@ -67,7 +76,6 @@
                             <i class="fa-solid fa-book-open"></i>
                             Learn
                         </a>
-
                     </li>
                     <li>
                         <a href="http://" class="btn btn-outline btn-primary">
@@ -80,6 +88,28 @@
 
         </div>
     </header>
+
+    <section class="w-11/12 mx-auto flex flex-col-reverse md:flex-row gap-10 justify-center items-center py-5">
+        <div class="content flex-1 text-center md:text-left">
+            <h2 class="text-5xl font-bold mb-8"><span class="text-blue-400">English</span> is Easy!!</h2>
+            <p class="font-bn text-2xl font-medium">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন
+                অথবা<br>
+                আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br>যাবে অন্য একটি Level এ</p>
+
+            <div class="w-6/12 mt-7">
+                <fieldset class="fieldset w-full flex flex-col space-y-4">
+                    <input type="email" class="input" placeholder="Enter Your Name" />
+                    <input type="password" class="input" placeholder="*********" />
+                    <a href="" class="btn btn-primary max-w-fit">Get Started</a>
+                </fieldset>
+            </div>
+
+        </div>
+        <div class="image">
+            <img src="./assets/hero-student.png" alt="Student">
+        </div>
+    </section>
+
 </body>
 
 </html>
